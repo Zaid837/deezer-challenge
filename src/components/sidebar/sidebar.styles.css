@@ -1,0 +1,29 @@
+.sidebar {
+  top: 0px;
+  width: 15%;
+  height: 100%;
+  position: absolute;
+  background: #574fd8;
+  margin: 0px;
+  transition: 0.5s;
+  padding-top: 50px;
+  /* box-shadow: 3px 0px 9px rgba(0, 0, 0, 0.05); */
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  /* vertical-align: middle; */
+}
+
+.sidelist {
+  font-size: 14px;
+  text-align: justify;
+  border-radius: 10px;
+}
+
+.sidelist:hover {
+  background-color: #7a74e0;
+  cursor: pointer;
+}

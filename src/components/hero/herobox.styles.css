@@ -1,0 +1,21 @@
+.herobox {
+  top: 0px;
+  left: 15%;
+  width: 85%;
+  height: 25%;
+  background: #ffb5a7;
+  overflow: hidden;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+.header-text {
+  padding: 40px;
+  color: #fff;
+}
+
+.hero {
+  width: 280px;
+  transform: scaleX(-1);
+}
