@@ -9,7 +9,7 @@ import { faChartLine } from "@fortawesome/free-solid-svg-icons";
 import Avatar from "../../assets/images/avatar.svg";
 function Sidebar() {
   return (
-    <div className="sidebar position-fixed" id="sidebar">
+    <div className="sidebar" id="sidebar">
       <div className="sidebar-items text-center text-white">
         <img src={Avatar} alt="avatar" className="avatar" />
         <p className="username mt-3 mb-5">Zaid</p>

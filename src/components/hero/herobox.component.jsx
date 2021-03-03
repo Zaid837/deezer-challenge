@@ -4,7 +4,7 @@ import Hero from "../../assets/images/hero.svg";
 
 function HeroBox() {
   return (
-    <div className="herobox position-fixed">
+    <div className="herobox ">
       <div className="header">
         <img src={Hero} alt="hero" className="hero" />
         <div className="header-text">

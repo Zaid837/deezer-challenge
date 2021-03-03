@@ -1,8 +1,6 @@
 .herobox {
-  top: 0px;
-  left: 15%;
-  width: 85%;
-  height: 25%;
+  width: 100%;
+  height: 150px;
   background: #ffb5a7;
   overflow: hidden;
 }

@@ -2,15 +2,16 @@ import React from "react";
 import HeroBox from "../components/hero/herobox.component";
 import Sidebar from "../components/sidebar/sidebar.component";
 import PlayerComponent from "../components/player/player.components";
+import "./userDashboard.styles.css";
 
 class UserDashboard extends React.Component {
   render() {
     return (
-      <div className="dashboard">
+      <div style={{ display: "flex" }}>
         <Sidebar />
-        <div className="content-area">
+        <div style={{ width: "85%", marginLeft: "15%" }}>
           <HeroBox />
-          {this.props.children}
+          <div className="content-area">{this.props.children}</div>
           <PlayerComponent />
         </div>
       </div>
