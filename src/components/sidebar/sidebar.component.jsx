@@ -7,6 +7,7 @@ import { faHeart } from "@fortawesome/free-solid-svg-icons";
 import { faPlayCircle } from "@fortawesome/free-solid-svg-icons";
 import { faChartLine } from "@fortawesome/free-solid-svg-icons";
 import Avatar from "../../assets/images/avatar.svg";
+import { Link } from "react-router-dom";
 function Sidebar() {
   return (
     <div className="sidebar" id="sidebar">
@@ -16,10 +17,13 @@ function Sidebar() {
 
         <div className="mt-3">
           <ul className="list-unstyled">
-            <li className="sidelist m-2 p-3">
-              <FontAwesomeIcon icon={faHeadphones} className="icon mr-3" />
-              <span>Discover</span>
-            </li>
+            <Link to="/" style={{ textDecoration: "none", color: "#fff" }}>
+              <li className="sidelist m-2 p-3">
+                <FontAwesomeIcon icon={faHeadphones} className="icon mr-3" />
+                <span>Discover</span>
+              </li>
+            </Link>
+
             <li className="sidelist m-2 p-3">
               <FontAwesomeIcon icon={faSearch} className="icon mr-3" />
               <span>Search</span>

@@ -39,3 +39,25 @@ span {
   background-color: #ffb5a7;
   margin-top: 11px;
 }
+@media screen and (max-width: 700px) {
+  .song-cover,
+  .song-title {
+    display: none;
+  }
+  .playback-controls {
+    display: flex;
+  }
+  .line {
+    width: 150px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .playback-controls {
+    display: flex;
+  }
+
+  .song-cover {
+    display: none;
+  }
+}
