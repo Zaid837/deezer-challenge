@@ -24,6 +24,7 @@
   overflow-x: scroll;
   overflow-y: hidden;
   gap: 20px;
+  cursor: pointer;
 }
 .music-card::-webkit-scrollbar {
   display: none;
@@ -45,4 +46,11 @@
 .name {
   text-align: center;
   margin-top: 15px;
+}
+
+@media screen and (max-width: 700px) {
+  .title {
+    font-size: 14px;
+    width: 400px;
+  }
 }

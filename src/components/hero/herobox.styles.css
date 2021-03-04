@@ -17,3 +17,9 @@
   width: 280px;
   transform: scaleX(-1);
 }
+
+@media screen and (max-width: 700px) {
+  .hero {
+    display: none;
+  }
+}

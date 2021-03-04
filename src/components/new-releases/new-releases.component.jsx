@@ -1,18 +1,46 @@
 import React from "react";
 import "./new-releases.styles.css";
+import PlayerComponent from "../../components/player/player.components";
+import { useState } from "react";
 
 const NewReleases = ({ tracks }) => {
+  // const {{id, title, cover: cover, preview }} = tracks
+
+  const [index, setIndex] = useState(0);
+  // const [play, playStatus] = useState(false);
+
+  const playerData = [];
+  tracks.map((val) => {
+    playerData.push({
+      id: val.id,
+      title: val.title,
+      cover: val.album.cover,
+      preview: val.preview,
+    });
+  });
+
+  const getSongId = (key) => {
+    setIndex(key);
+    // playStatus(false);
+  };
+
+  console.log(playerData);
   return (
     <div>
       <div className="title-intro">
         <h5 className="title">Released this week</h5>
         <div className="line2 ml-4 mt-3"></div>
       </div>
-
       <div className="music-card">
-        {tracks.map((val) => {
+        {tracks.map((val, key) => {
           return (
-            <div className="card-container">
+            <div
+              className="card-container"
+              key={key}
+              onClick={() => {
+                getSongId(key);
+              }}
+            >
               <div className="image">
                 <img
                   key={val.id}
@@ -28,6 +56,7 @@ const NewReleases = ({ tracks }) => {
           );
         })}
       </div>
+      <PlayerComponent tracks={playerData} index={index} />
     </div>
   );
 };

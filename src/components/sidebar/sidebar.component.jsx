@@ -18,23 +18,23 @@ function Sidebar() {
           <ul className="list-unstyled">
             <li className="sidelist m-2 p-3">
               <FontAwesomeIcon icon={faHeadphones} className="icon mr-3" />
-              Discover
+              <span>Discover</span>
             </li>
             <li className="sidelist m-2 p-3">
               <FontAwesomeIcon icon={faSearch} className="icon mr-3" />
-              Search
+              <span>Search</span>
             </li>
             <li className="sidelist m-2 p-3">
               <FontAwesomeIcon icon={faHeart} className="icon mr-3" />
-              Favourites
+              <span>Favourites</span>
             </li>
             <li className="sidelist m-2 p-3">
               <FontAwesomeIcon icon={faPlayCircle} className="icon mr-3" />
-              Playlists
+              <span>Playlists</span>
             </li>
             <li className="sidelist m-2 p-3">
               <FontAwesomeIcon icon={faChartLine} className="icon mr-3" />
-              Charts
+              <span>Charts</span>
             </li>
           </ul>
         </div>

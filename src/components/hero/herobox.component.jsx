@@ -8,7 +8,7 @@ function HeroBox() {
       <div className="header">
         <img src={Hero} alt="hero" className="hero" />
         <div className="header-text">
-          <h3>Your favourite tunes</h3>
+          <h3 className="favourite">Your favourite tunes</h3>
           <h5>All 🌝 and all 🌚</h5>
         </div>
       </div>

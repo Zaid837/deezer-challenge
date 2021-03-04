@@ -26,3 +26,19 @@
   background-color: #7a74e0;
   cursor: pointer;
 }
+
+@media screen and (max-width: 700px) {
+  .avatar {
+    width: 50px;
+  }
+  .icon {
+    font-size: 18px;
+  }
+
+  .username {
+    display: none;
+  }
+  .sidelist span {
+    display: none;
+  }
+}
