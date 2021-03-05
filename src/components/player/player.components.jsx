@@ -30,9 +30,9 @@ class PlayerComponent extends React.Component {
     this.setState({ status: false });
   };
 
-  prevSong = () => {
-    this.setState({ index: this.props.index - 1 });
-    alert(this.state.index);
+  prevSong = async () => {
+    this.setState({ index: this.state.index + 1 });
+    this.myRef.current.play();
   };
 
   render() {

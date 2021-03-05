@@ -7,7 +7,7 @@ const NewReleases = ({ tracks }) => {
   // const {{id, title, cover: cover, preview }} = tracks
 
   const [index, setIndex] = useState(0);
-  // const [play, playStatus] = useState(false);
+  const [play, playStatus] = useState(false);
 
   const playerData = [];
   tracks.map((val) => {
@@ -21,10 +21,10 @@ const NewReleases = ({ tracks }) => {
 
   const getSongId = (key) => {
     setIndex(key);
-    // playStatus(false);
+    playStatus(false);
   };
 
-  console.log(playerData);
+  // console.log(playerData);
   return (
     <div>
       <div className="title-intro">
@@ -56,7 +56,7 @@ const NewReleases = ({ tracks }) => {
           );
         })}
       </div>
-      <PlayerComponent tracks={playerData} index={index} />
+      <PlayerComponent tracks={playerData} index={index} status={play} />
     </div>
   );
 };

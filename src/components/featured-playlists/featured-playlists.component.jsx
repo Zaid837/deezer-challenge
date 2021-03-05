@@ -13,7 +13,7 @@ const FeaturedPlaylists = ({ playlists }) => {
         {playlists.map((val) => {
           return (
             <Link
-              to={`/${val.id}`}
+              to={`/playlists/${val.id}`}
               style={{ textDecoration: "none", color: "#000" }}
             >
               <div className="card-container">

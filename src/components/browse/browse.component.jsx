@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Browse = ({ browse }) => {
   return (
@@ -11,19 +12,24 @@ const Browse = ({ browse }) => {
       <div className="music-card">
         {browse.map((val) => {
           return (
-            <div className="card-container">
-              <div className="image">
-                <img
-                  key={val.id}
-                  src={val.cover}
-                  alt="music-cover"
-                  className="music-cover"
-                />
+            <Link
+              to={`/browse/${val.id}`}
+              style={{ textDecoration: "none", color: "#000" }}
+            >
+              <div className="card-container">
+                <div className="image">
+                  <img
+                    key={val.id}
+                    src={val.cover}
+                    alt="music-cover"
+                    className="music-cover"
+                  />
+                </div>
+                <p className="name" key={val.id}>
+                  {val.title}
+                </p>
               </div>
-              <p className="name" key={val.id}>
-                {val.title}
-              </p>
-            </div>
+            </Link>
           );
         })}
       </div>
